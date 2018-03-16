@@ -97,7 +97,7 @@ dependencies {
     //====================圆圈加数字指示========================
     compile 'q.rorbin:badgeview:1.1.3'
     //====================//HTML Parser html解析========================
-    compile 'org.jsoup:jsoup:1.11.2'
+//    compile 'org.jsoup:jsoup:1.11.2'
     //====================//用于解析Adobe After Effects动画========================
     compile 'com.airbnb.android:lottie:2.1.0'
     //====================圆形图片========================
@@ -118,8 +118,8 @@ dependencies {
     //圆角view
     compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
     //====================ButterKnife========================
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+//    compile 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //====================上下滑动选择器========================
     compile 'com.bigkoo:pickerview:2.1.1'
     //====================沉浸状态栏========================

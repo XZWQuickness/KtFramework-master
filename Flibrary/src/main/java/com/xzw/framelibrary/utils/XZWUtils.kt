@@ -24,7 +24,6 @@ import ezy.boost.update.UpdateInfo
 import ezy.boost.update.UpdateManager
 import org.json.JSONException
 import org.json.JSONObject
-import org.jsoup.Jsoup
 import java.util.*
 import java.util.regex.Pattern
 
@@ -322,18 +321,18 @@ object xzwUtils {
      * @param html 富文本
      * @return  矫正图片后的富文本
      */
-    fun getHtmlContent(html: String): String {
-        //
-        val doc_Dis = Jsoup.parse(html)
-        val ele_Img = doc_Dis.getElementsByTag("img")
-        if (ele_Img.size != 0) {
-            for (e_Img in ele_Img) {
-                e_Img.attr("style", "max-width:100%;height:auto;")
-            }
-        }
-        //
-        return doc_Dis.toString()
-    }
+//    fun getHtmlContent(html: String): String {
+//        //
+//        val doc_Dis = Jsoup.parse(html)
+//        val ele_Img = doc_Dis.getElementsByTag("img")
+//        if (ele_Img.size != 0) {
+//            for (e_Img in ele_Img) {
+//                e_Img.attr("style", "max-width:100%;height:auto;")
+//            }
+//        }
+//        //
+//        return doc_Dis.toString()
+//    }
 
     /**
      * [isManual] 是否是手动更新   true 是  false 否

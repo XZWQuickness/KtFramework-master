@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
@@ -14,6 +13,7 @@ import android.view.WindowManager;
 import com.hwangjr.rxbus.RxBus;
 import com.lzy.imagepicker.view.SystemBarTintManager;
 import com.xzw.framelibrary.R;
+import com.xzw.framelibrary.base.AbsBaseActivity;
 import com.xzw.framelibrary.config.Constants;
 import com.xzw.framelibrary.view.CustomProgress;
 
@@ -23,10 +23,8 @@ import permissions.dispatcher.RuntimePermissions;
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.Manifest.permission.CALL_PHONE;
-import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.READ_SMS;
 import static android.Manifest.permission.RECEIVE_SMS;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 
 /**
@@ -102,49 +100,6 @@ public abstract class BaseActivity extends AppCompatActivity implements AbsBaseA
 
     }
 
-    @Override
-    public void PermissionCameraWithCheck(Intent intent, int requestCode, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionCameraWithPermissionCheck(this, intent,requestCode,isService);
-    }
-
-    @Override
-    public void PermissionCameraWithCheck(Intent intent, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionCameraWithPermissionCheck(this, intent,-1,isService);
-    }
-
-    @Override
-    public void PermissionLocationWithCheck(Intent intent, int requestCode, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionLocationWithPermissionCheck(this, intent,requestCode,isService);
-    }
-
-    @Override
-    public void PermissionLocationWithCheck(Intent intent, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionLocationWithPermissionCheck(this, intent,-1,isService);
-    }
-    @Override
-    public void PermissionSMSWithCheck(Intent intent, int requestCode, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionSMSWithPermissionCheck(this, intent,requestCode,isService);
-    }
-
-    @Override
-    public void PermissionSMSWithCheck(Intent intent, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionSMSWithPermissionCheck(this, intent,-1,isService);
-    }
-
-    @Override
-    public void PermissionCallPhoneWithCheck(Intent intent, int requestCode, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionCallPhoneWithPermissionCheck(this, intent,requestCode,isService);
-    }
-
-    @Override
-    public void PermissionCallPhoneWithCheck(Intent intent, boolean isService) {
-        BaseActivityPermissionsDispatcher.PermissionCallPhoneWithPermissionCheck(this, intent,-1,isService);
-    }
-
-    @NeedsPermission({CAMERA, WRITE_EXTERNAL_STORAGE})
-    void PermissionCamera(Intent intent,int requestCode, boolean isService) {
-        startAction(intent, isService,requestCode==-1? Constants.Permission.Camera :requestCode);
-    }
 
     @NeedsPermission({ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION})
     void PermissionLocation(Intent intent,int requestCode, boolean isService) {
@@ -170,11 +125,6 @@ public abstract class BaseActivity extends AppCompatActivity implements AbsBaseA
         }
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        BaseActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
-    }
     @Override
     public void onDestroy() {
 

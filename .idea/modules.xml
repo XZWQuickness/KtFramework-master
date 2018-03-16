@@ -3,11 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Flibrary/Flibrary.iml" filepath="$PROJECT_DIR$/Flibrary/Flibrary.iml" />
-      <module fileurl="file://E:\StudioItem\KtFramework-master\Flibrary\Flibrary.iml" filepath="E:\StudioItem\KtFramework-master\Flibrary\Flibrary.iml" />
       <module fileurl="file://E:\StudioItem\KtFramework-master\KtFramework.iml" filepath="E:\StudioItem\KtFramework-master\KtFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/KtFramework-master.iml" filepath="$PROJECT_DIR$/KtFramework-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\StudioItem\KtFramework-master\app\app.iml" filepath="E:\StudioItem\KtFramework-master\app\app.iml" />
     </modules>
   </component>
 </project>
