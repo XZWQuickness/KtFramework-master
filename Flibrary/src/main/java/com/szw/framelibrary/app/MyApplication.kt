@@ -44,6 +44,8 @@ abstract class MyApplication : MultiDexApplication(), AbsApplication {
         initOkGo()
         //Install  程序崩溃日志初始化
         //        CustomActivityOnCrash.install(this);
+
+
     }
 
     fun initOkGo() {
