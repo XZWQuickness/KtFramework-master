@@ -1,9 +1,9 @@
-[![](https://jitpack.io/v/NW0LC/KtFramework.svg)](https://jitpack.io/#NW0LC/KtFramework)
+[![](https://jitpack.io/v/XZWQuickness/KtFramework.svg)](https://jitpack.io/#XZWQuickness/KtFramework)
 Android-KtFramework
 ===========================
 
 
-![MyFramework Library](http://upload.ouliu.net/i/20171218140859gmsis.jpeg)
+![MyFramework Library](http://upload.ouliu.net/i/2018031610372928ztm.jpeg)
 
 
 This project contains a lot of convenient and development of the libraries, tools, and controls.Offline popular network framework
