@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_bg">#d7d7d7</color>
+    <color name="color_loadMore">#0dddb8</color>
+    <color name="color_toolBar">#00ffffff</color>
+    <color name="color_toolBar_title">#FF333333</color>
+    <color name="color_previewActivity_toolBar_bg">#FF333333</color>
+    <color name="color_previewActivity_toolBar_title">#ffffff</color>
+</resources>
