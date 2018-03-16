@@ -1,4 +1,4 @@
-package cn.com.szw.ktframework;
+package cn.com.xzw.ktframework;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package cn.com.szw.ktframework;
+package cn.com.xzw.ktframework;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("cn.com.szw.ktframework", appContext.getPackageName());
+        assertEquals("cn.com.xzw.ktframework", appContext.getPackageName());
     }
 }
