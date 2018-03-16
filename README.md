@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/NW0LC/KtFramework.svg)](https://jitpack.io/#BEC/KtFramework)
+[![](https://jitpack.io/v/XZWQuickness/KtFramework.svg)](https://jitpack.io/#XZWQuickness/KtFramework)
 Android-KtFramework
 ===========================
 
