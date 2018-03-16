@@ -3,7 +3,7 @@ Android-KtFramework
 ===========================
 
 
-![MyFramework Library](http://pic28.photophoto.cn/20130830/0005018373595008_b.jpg)
+![MyFramework Library](http://upload.ouliu.net/i/2018031610372928ztm.jpeg)
 
 
 This project contains a lot of convenient and development of the libraries, tools, and controls.Offline popular network framework
